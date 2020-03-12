@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="mask">
+        <div class="main-con">
+            <div class="sect">
+                <img src="adminpic.jpg" alt="Login" class="login-bg">
+
+            </div>
+            <div class="sect">
+                <h1>Welcome back !</h1>
+                <h4>Login to continue</h4>
+                <form action="" class="form-cont">
+                    <label for="User">
+                       <span class="lbl-text">Email</span>
+                       <div class="bar"><input class="inp" type="text" name="User" id="user-id" onfocus="anim_start(this,1)" onblur="anim_end(this,1)"></div>
+                    </label>
+                    <label for="Pass">
+                       <span class="lbl-text">Password</span>
+                       <div class="bar"><input class="inp" type="password" name="Pass" id="user-pass" onfocus="anim_start(this,2)" onblur="anim_end(this,2)"></div>
+                   </label>
+                    <button class="btn"><a href="D:\__studymaterial__\computer science\Webdevelopement\Conti-Assis\Admindashboard\public_html\index.html"> Login</a></button>
+                </form>
+            </div>
+        </div>
+        <button class="tog" onclick="toggle()">
+            <span class="dots"></span>
+            <span class="dots"></span>
+            <span class="dots"></span>
+        </button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

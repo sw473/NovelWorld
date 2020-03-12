@@ -1,0 +1,282 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url("background.jpg");
+
+}
+.navbar {
+    overflow: hidden;
+    background-color: rgba(64, 64, 65, 0.26);
+    border-radius:25px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.logo{
+    float: left;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 0px;
+    border-radius: 50%;
+}
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.6s ease;
+}
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border-radius: 25px;
+    transition: 0.6s ease;
+}
+
+}
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background-color:rgb(255, 255, 255);
+    transition: 0.6s ease;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.281);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(7, 11, 241, 0.096);
+    z-index: 1;
+    border-radius: 22px;
+    transition: 0.6s ease-in-out;
+
+}
+
+.dropdown-content a{
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: 0.6s;
+
+}
+.dropdown-content a:hover {
+    background-color: rgba(13, 112, 241, 0.411);
+    transition: 0.6s;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: 0.6s;
+}
+
+.navbar input[type=text]{
+    background-color: white;
+    float: right;
+    padding: 8px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    outline: none;
+}
+
+@media screen and (max-width: 600px){
+    .navbar a, .navbar input[type=text]{
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .navbar input[type=text]{
+        border: 1px solid #CCC;
+    }
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(235, 111, 11);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+/* Images-Part*/
+
+img {
+    width: 500px; /* need to overwrite inline dimensions */
+    height: 250px;
+}
+h2 {
+    margin-bottom: .5em;
+    color: rgb(223, 126, 61);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-gap: 4em;
+}
+/* hover styles */
+.location-listing {
+    position: relative;
+}
+.location-image {
+    line-height: 0;
+    overflow: hidden;
+}
+
+.location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+}
+
+.location-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(90,0,10,0.4);
+    color: white;
+
+    /* position the text in t’ middle*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-listing:hover .location-title {
+    opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+    filter: blur(2px);
+}
+/* for touch screen devices */
+@media (hover: none) {
+
+.location-title {
+    opacity: 1;
+}
+
+.location-image img {
+    filter: blur(2px);
+    }
+}

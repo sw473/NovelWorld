@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Novel Adding Form</title>
+<link href="css\styleform.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form name="frmRegistration" method="post" action="">
+        <div class="demo-table">
+        <div class="form-head">Add Novel</div>
+            <div class="field-column">
+                <label>Name of the Novel</label>
+                <div>
+                    <input type="text" class="demo-input-box"
+                        name="userName">
+                </div>
+            </div>
+            
+            
+            <div class="field-column">
+                <label>Author Name</label>
+                <div>
+                    <input type="text" class="demo-input-box"
+                        name="firstName"
+                        value="">
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label>Genre -</label>
+                <select id="drop">
+                  <option value="Admin">Fantasy</option>
+                  <option value="Employee">Romance</option>
+                  <option value="Prime">Horror</option>
+                  <option value="Non-Prime">Thriller</option>
+                </select>
+              </div>
+            <div class="field-column">
+                <div class="file-upload">
+                    <input class="file-upload__input" type="file" name="myFile[]" id="myFile" multiple>
+                    <button class="file-upload__button" type="button">Choose File(s)</button>
+                    <span class="file-upload__label"></span>
+                  </div>
+            <div>
+                <input type="submit" name="register-user" value="Add Novel" class="btnRegister">
+                <button type="submit" class="btn"><a href="HomeAdmin.html">Back to Dashboard</a></button>
+            </div>
+        </div>
+    </div>
+    </form>
+<script>
+        Array.prototype.forEach.call(
+  document.querySelectorAll(".file-upload__button"),
+  function(button) {
+    const hiddenInput = button.parentElement.querySelector(
+      ".file-upload__input"
+    );
+    const label = button.parentElement.querySelector(".file-upload__label");
+    const defaultLabelText = "No file(s) selected";
+
+    // Set default text for label
+    label.textContent = defaultLabelText;
+    label.title = defaultLabelText;
+
+    button.addEventListener("click", function() {
+      hiddenInput.click();
+    });
+
+    hiddenInput.addEventListener("change", function() {
+      const filenameList = Array.prototype.map.call(hiddenInput.files, function(
+        file
+      ) {
+        return file.name;
+      });
+
+      label.textContent = filenameList.join(", ") || defaultLabelText;
+      label.title = label.textContent;
+    });
+  }
+);
+
+</script>
+</body>
+</html>

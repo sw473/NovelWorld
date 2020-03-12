@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>SignUp Page</title>
+    <style>
+        body{
+            background: url("images.jpg") no-repeat;
+            background-size: cover;
+        }
+              
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+    <body>
+       <p>&nbsp;</p>
+        <div class="container container_dec">
+            <div class="row">
+                <div class="col-xs-4 col-xs-offset-4">
+                    <div class="panel panel-primary panel_look" >
+                        <div class="panel-heading">
+                            <h4>SIGN UP</h4>
+                        </div>
+                        <div class="panel-body">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control"  placeholder="First Name" name="fname" required = "true">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control"  placeholder="Last Name" name="lname" required = "true">
+                                </div>
+                                <h5>Gender</h5>
+                                <div class="form-group">
+                                <input type="radio" name="gender" value="male"> Male 
+                               
+                                <input type="radio" name="gender" value="female"> Female
+                                
+                                <input type="radio" name="gender" value="others"> Others
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control"  placeholder="Email" name="e-mail" required = "true">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password" name="password" required = "true">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Re-enter Password" name="password" required = "true">
+                                </div>
+                                 <div>
+                                    <input type="checkbox" name="remember" value="Policy">I accept the Terms of Use & Privacy Policy<br><br>
+                                </div>
+                                <button type="submit" name="submit" class="btn btn-primary">Register</button>
+                                <button type="button" value="Refresh Page" onClick="refresh" class="btn btn-primary"> Refresh</button><br><br>
+                            </form>
+                        </div>
+                        <div class="panel-footer"><p>  &copy Swastik Srivastava 2019 <a href="#">| Novel Lovers</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

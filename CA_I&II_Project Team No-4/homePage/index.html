@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>novelworld</title>
+
+        <link href="CSS/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navbar" >
+            <img src="novellovers.png" alt="logo" class="logo">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Genre <i class="fa-fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">History</a>
+                    <a href="#">Fantasy</a>
+                    <a href="#">Romance</a>
+                    <a href="#">Horror&Thriller</a>
+                </div>
+            </div>
+            <a href="D:\__studymaterial__\computer science\Webdevelopement\CA_I&II_Project Team No-4\Signup_bootstrap\public_html\index.html">Signup</a>
+            <a href="D:\__studymaterial__\computer science\Webdevelopement\CA_I&II_Project Team No-4\sagarlogin\public_html\index.html">Login</a>
+            <a href="D:\__studymaterial__\computer science\Webdevelopement\CA_I&II_Project Team No-4\Adminlogin\public_html\index.html">AdminLogin</a>
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="HP.jpg" style="width:100%">
+                <div class="text">Harry Potter Series</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="gotposter.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="Witcher1.jpg" style="width:100%">
+                <div class="text">The Witcher Series</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+        <!--Images-Part-->
+        <div class="child-page-listing">
+                <h2>Our Novels</h2>
+                <div class="grid-container">
+                    <article id="3685" class="location-listing">
+                        <a class="location-title" href="#">Eragon</a>
+                        <div class="location-image">
+                            <a href="#"><img src="eragon.jpg" alt="eragon"></a>
+                        </div>
+                    </article>
+
+                    <article id="3688" class="location-listing">
+                        <a class="location-title" href="#">Shiva Trilogy</a>
+                        <div class="location-image">
+                            <a href="#"><img src="shiva.gif" alt="shiva">    </a>
+                        </div>
+                    </article>
+
+                    <article id="3691" class="location-listing">
+                        <a class="location-title" href="#">Harry Potter</a>
+                        <div class="location-image">
+                            <a href="#"><img src="harry.jpg" alt="harry potter">    </a>
+                        </div>
+                    </article>
+
+                    <article id="3694" class="location-listing">
+                            <a class="location-title" href="#">Stephen Kings's-IT</a>
+                            <div class="location-image">
+                                <a href="#"><img src="IT.jpg" alt="IT"></a>
+                            </div>
+                    </article>
+
+                    <article id="3697" class="location-listing">
+                        <a class="location-title" href="#">The Witcher</a>
+                        <div class="location-image">
+                            <a href="#"><img src="witcher.jpg" alt="the witcher"></a>
+                        </div>
+                    </article>
+
+                    <article id="3700" class="location-listing">
+                        <a class="location-title" href="#">The Lord of the Rings</a>
+                        <div class="location-image">
+                            <a href="#"><img src="lordofthering.jpg" alt="the lord of the rings"></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+    </body>
+</html>
