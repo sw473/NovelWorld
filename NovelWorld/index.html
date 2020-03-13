@@ -10,7 +10,7 @@
     </head>
     <body>
         <div class="navbar" >
-            <img src="C:\Users\Swastik\Desktop\web\NovelWorld\FirstPageImgs\novellovers.png" alt="logo" class="logo">
+            <img src="FirstPageImgs\novellovers.png" alt="logo" class="logo">
             <div class="dropdown">
                 <button class="dropbtn">
                     Genre <i class="fa-fa-caret-down"></i>
@@ -22,29 +22,29 @@
                     <a href="#">Horror&Thriller</a>
                 </div>
             </div>
-            <a href="#">Sign-Up</a>
-            <a href="#">Sign-In</a>
-            <input type="text" placeholder="Search...">
             <a href="#">About Us</a>
             <a href="#">Contact Us</a>
+            <input type="text" placeholder="Search...">
+            <a href="#">Sign-Up</a>
+            <a href="#">Sign-In</a>
             
         </div>
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
-                <img src="D:\__studymaterial__\computer science\NovelWorld\NovelWorld\NovelWorld\FirstPageImgs\HP.jpg" style="width:100%">
+                <img src="FirstPageImgs\HP.jpg" style="width:100%">
                 <div class="text">Harry Potter Series</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="D:\__studymaterial__\computer science\NovelWorld\NovelWorld\NovelWorld\FirstPageImgs\shiva.gif" style="width:100%">
+                <img src="FirstPageImgs\shiva.gif" style="width:100%">
                 <div class="text">Shiva Trilogy</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img src="D:\__studymaterial__\computer science\NovelWorld\NovelWorld\NovelWorld\FirstPageImgs\witcher.jpg" style="width:100%">
+                <img src="FirstPageImgs\witcher.jpg" style="width:100%">
                 <div class="text">The Witcher Series</div>
             </div>
 
@@ -60,35 +60,8 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
 
-            <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-            }
-            </script>
-
-        
+            <script src="D:\__studymaterial__\computer science\NovelWorld\NovelWorld\NovelWorld\Js\functions.js"></script>
+        <!-- Novel Gallery -->
+       
     </body>
 </html>
