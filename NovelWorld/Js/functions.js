@@ -21,10 +21,10 @@ var slideIndex = 1;
                     slides[i].style.display = "none";
             }
             for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
+                dots[i].className = dots[i].className.replace(" activedot", "");
             }
             slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
+            dots[slideIndex-1].className += " activedot";
             }
 
 // Novel Gallery
@@ -71,9 +71,9 @@ var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    var current = document.getElementsByClassName("activebt");
+    current[0].className = current[0].className.replace(" activebt", "");
+    this.className += " activebt";
   });
 }
 
