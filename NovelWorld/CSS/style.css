@@ -3,6 +3,7 @@ body{
     background:#f2f2f2;
 
 }
+
 .navbar {
     
 
@@ -97,6 +98,15 @@ body{
     border-radius: 25px;
     font-size: 14px;
     outline: none;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
 
 @media screen and (max-width: 600px){
@@ -337,3 +347,6 @@ h2{
   .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
+
+  /* Site footer */
+
